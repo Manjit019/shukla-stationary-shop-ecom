@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-G42M5VZWEF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-G42M5VZWEF');
+</script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shukla Books & Stationary Store</title>
+
+  <link rel="shortcut icon" href="/assets/favicon-uzOy1_MN.ico" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap"
+    rel="stylesheet">
+  <script src="https://kit.fontawesome.com/e2966aec31.js" crossorigin="anonymous"></script>
+  <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+
+  <script type="module" crossorigin src="/assets/cart-D_Ai2nU-.js"></script>
+  <link rel="modulepreload" crossorigin href="/assets/getCartProductsFromLS-Cys89hF7.js">
+  <link rel="stylesheet" crossorigin href="/assets/getCartProductsFromLS-CXw7NSOH.css">
+</head>
+
+<body>
+  <!-------------------- Header sectiion starts----------------------->
+  <header class="header-section cart mb-20">
+
+  </header>
+  <!----------------------- Header sectiion ends----------------------->
+
+
+  <!------------------cart section starts ------------------->
+  <h2 class="font-bold text-2xl text-center uppercase my-8 ">Your cart <i
+      class="fa-solid fa-cart-shopping text-emerald-400"></i></h2>
+  <section class="cart min-h-48 md:px-20 mobile:px-2 my-6 flex md:flex-row mobile:flex-col gap-4 relative">
+    <div class="cartProductsContainer md:w-4/6 mobile:w-full  rounded-lg">
+       
+      
+    </div>
+    <div class="right md:w-[30%] mobile:w-full h-fit bg-slate-100 p-4 rounded-md sticky top-16">
+      <h3 class="font-medium text-slate-500 border-b-2 pb-2 mb-3 uppercase">Price details : </h3>
+      <div class="flex justify-between text-sm ">
+        <p>Sub Total</p>
+        <p class="subTotal font-semibold">₹ 8700</p>
+      </div>
+      <div class="flex justify-between text-sm my-4">
+        <p>Discount </p>
+        <p class="discount font-semibold text-emerald-500">- ₹ 2700</p>
+      </div>
+      <div class="flex justify-between text-sm my-4">
+        <p>Delivery Charges </p>
+        <div>
+          <span class="actualPrice text-slate-500 line-through text-xs">₹ 100</span>
+          <span class="font-semibold text-emerald-500"> Free</span>
+        </div>
+      </div>
+
+      <div class=" flex justify-between place-items-center text-sm my-4 font-bold border-t-2 py-3">
+        <p>Total Amount </p>
+        <p class="totalAmount text-lg">₹ 6000</p>
+      </div>
+
+      <button class="btn w-full mobile:sticky md:static bottom-14 mobile:py-2 md:py-0">Place Order</button>
+    </div>
+  </section>
+
+  <!-- template for cart products  -->
+<template id="productCartTemplate">
+  <div id="cartIndex" class="flex gap-4 px-6  py-4 bg-slate-100 rounded-lg border">
+    <div>
+      <div class="md:size-28 mobile:size-20 overflow-hidden mb-4 rounded-lg border">
+        <img class="productImage" src="" alt="">
+      </div>
+
+      <div
+        class="qtyElem flex gap-2 justify-center place-items-center  md:px-2 mobile:px-1 md:py-1 mobile:py-0 border-2 rounded-md text-[14px]">
+        <span
+          class="decrease size-4 rounded-full bg-slate-300 hover:bg-slate-200 hover:cursor-pointer flex justify-center place-items-center font-extrabold ">-</span>
+        <p class="quantity border px-2 py-1 rounded-md bg-teal-100">1</p>
+        <span
+          class="increase size-4 rounded-full bg-slate-300 hover:bg-slate-200 hover:cursor-pointer flex justify-center place-items-center font-bold ">+</span>
+
+      </div>
+    </div>
+    <div class="desc relative">
+      <h3 class="productName md:text-sm mobile:text-[12px] font-medium mb-2"></h3>
+      <span
+        class="category px-3 py-1 md:text-[12px] mobile:text-[8px] capitalize bg-emerald-200 rounded-sm "></span>
+      <div class="my-2 ">
+        <span class="actualPrice text-slate-500 line-through text-xs"></span>
+        <span class="price font-bold md:text-lg mobile:text-sm"></span>
+      </div>
+
+      <button type="button" class="btn btn-remove bg-black absolute bottom-1 rounded-md">remove</button>
+    </div>
+  </div>
+</template>
+  <!------------------cart section starts ------------------->
+  <!---------------------- footer section starts------------------->
+
+  <footer class="footer-section">
+
+  </footer>
+  <!----------------------- footer section ends----------------------->
+
+  
+</body>
+</html>
